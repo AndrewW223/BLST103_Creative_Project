@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Post-1965 Black Freedom Movement</title>
+    <link rel="stylesheet" href="styles.css">
+    <script type="text/javascript" src="https://unpkg.com/vis-network/standalone/umd/vis-network.min.js"></script>
+</head>
+<body>
+
+    <header class="main-nav">
+        <div class="header-content">
+            <h1>The Black Freedom Movement Post-1965</h1>
+        </div>
+    </header>
+
+    <div class="app-container">
+        <div id="mynetwork"></div>
+
+        <button id="open-panel-btn" class="hidden">☰ Open Info Panel</button>
+
+        <div id="info-panel">
+            <div class="panel-header">
+                <h2 id="panel-title">Explore the Movement</h2>
+                <button id="close-panel-btn" title="Close Panel">&times;</button>
+            </div>
+            
+            <div class="panel-content">
+                <p class="instruction-text" id="default-msg">
+                    <strong>Welcome!</strong><br><br>
+                    Click on an organization, event, or leader in the graph to the left to explore their role and impact in the post-1965 Black Freedom Movement.
+                </p>
+                
+                <div id="node-details" class="hidden">
+                    <p id="node-description"></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
